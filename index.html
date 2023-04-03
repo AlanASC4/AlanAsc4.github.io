@@ -1,3 +1,8 @@
+<?php
+//start a session
+session_start();
+?>
+
 <!DOCTYPE html>
 
   <head>
@@ -24,6 +29,14 @@
 	<p>
 
 	<a href="https://AlanASC4.github.io/projectResume.html">Find My Resume Here!</a>
+
+	<?php
+//set session variables
+	$_SESSION["myuniversity"] = "Rutgers";
+	$_SESSION["status"] = "Junior";
+	echo "Session variables set, Welcome to PHP Programming";	
+?>
+
 
   </body>
 
